@@ -1,0 +1,69 @@
+{
+    "$schema": "http://json.schemastore.org/tslint",
+    "extends": [
+        "tslint-react",
+        "tslint-config-airbnb"
+    ],
+    "rules": {
+        "ter-indent": false,
+        "indent": false,
+        "function-name": false,
+        "import-name": false,
+        "variable-name": false,
+        "no-empty-interface": false,
+        "no-any": false,
+        "no-unused-variable": [
+            true,
+            {
+                "ignore-pattern": "^React"
+            }
+        ],
+        "object-literal-sort-keys": false,
+        "ordered-imports": [
+            false
+        ],
+        "quotemark": [
+            true,
+            "single",
+            "jsx-double"
+        ],
+        "react-this-binding-issue": [
+            true,
+            {
+                "allow-anonymous-listeners": true
+            }
+        ],
+        "trailing-comma": [
+            false,
+            {
+                "multiline": "always",
+                "singleline": "never"
+            }
+        ],
+        "semicolon": [
+            false,
+            "always",
+            "ignore-interfaces"
+        ],
+        "align": [
+            true,
+            "statements",
+            "members"
+        ],
+        "no-submodule-imports": false,
+        "no-object-literal-type-assertion": false,
+        "jsx-alignment": false,
+        "jsx-curly-spacing": false,
+        "jsx-no-multiline-js": false,
+        "jsx-boolean-value": false,
+        "jsx-wrap-multiline": false,
+        "max-line-length": false
+    },
+    "linterOptions": {
+        "exclude": [
+            "node_modules/**/*.*",
+            "webpack/**/*",
+            "src/registerServiceWorker.js"
+        ]
+    }
+}
