@@ -6,7 +6,9 @@ phases:
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
+      - rm -rf node_modules
       - npm install
+      - npm start
   build:
     commands:
       #build
