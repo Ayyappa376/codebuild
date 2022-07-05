@@ -8,7 +8,6 @@ phases:
       - echo Installing source NPM dependencies...
       - rm -rf node_modules
       - npm install
-      - npm run start
   build:
     commands:
       #build
