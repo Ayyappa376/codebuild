@@ -100,7 +100,9 @@
     "deploy-win:dev": "npm run build-win:dev && aws s3 sync build/ s3://dev.gigatester.io",
     "deploy-win:beta": "npm run build-win:beta && aws s3 sync build/ s3://beta.gigatester.io",
     "deploy-win:prod": "npm run build-win:prod && aws s3 sync build/ s3://prod.gigatester.io",
-    "install:awscli": "sudo pip install awscli"
+    "install:awscli": "sudo pip install awscli",
+	"test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/env-cmd -f ./.env.prod pm2 start -f *.js"
   },
   "browserslist": [
     ">0.2%",
