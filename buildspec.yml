@@ -13,7 +13,7 @@ phases:
     commands:
       #build
       - echo Building...
-      - npm --prefix ./Frontend/ run build
+      - npm run build
 artifacts:
   files:
     "**/*"
