@@ -12,7 +12,6 @@ phases:
     commands:
       #build
       - echo Building...
-      - npm run build
 artifacts:
   files:
     - "**/*"
