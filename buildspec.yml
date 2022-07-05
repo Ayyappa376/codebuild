@@ -1,14 +1,11 @@
 version: 0.2
-phases: 
+phases:
   install:
-    commands:
-      # Install Node
-      - echo Installing Node 14...
-      - apt install -y npm
+    runtime-versions:
+      nodejs: 14.x
   pre_build:
     commands:
-      #install dependencies
-      - echo Installing dependencies...
+      - echo Installing source NPM dependencies...
       - npm install
   build:
     commands:
