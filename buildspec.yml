@@ -6,10 +6,12 @@ phases:
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
+      - npm install
   build:
     commands:
       #build
       - echo Building...
+      - npm run test
 artifacts:
   files:
     - "**/*"
